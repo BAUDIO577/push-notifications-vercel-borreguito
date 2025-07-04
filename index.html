@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel Borreguito</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #e6f5ec;
+      color: #034d25;
+      text-align: center;
+      padding: 2rem;
+    }
+    #logo {
+      width: 140px;
+      border-radius: 20px;
+      margin-bottom: 1.5rem;
+    }
+    input, textarea, button {
+      padding: 0.6rem;
+      margin: 0.5rem;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    input, textarea {
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #028c36;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #026c2a;
+    }
+  </style>
+</head>
+<body>
+  <img id="logo" src="logo.png" alt="Logo Borreguito" />
+  <h1>📢 Panel de Notificaciones</h1>
+  <p>Tokens registrados: <strong id="cantidadTokens">Cargando...</strong></p>
+
+  <input type="text" id="titulo" placeholder="Título de la notificación" /><br />
+  <textarea id="mensaje" placeholder="Mensaje de la notificación"></textarea><br />
+
+  <button onclick="enviarNotificacion()">🚀 Enviar Notificación</button>
+  <button onclick="borrarTokens()">🗑️ Borrar Tokens</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
