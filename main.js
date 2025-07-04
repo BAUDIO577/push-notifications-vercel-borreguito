@@ -1,4 +1,4 @@
-const BACKEND_URL = "http://192.168.50.1:5000";
+const BACKEND_URL = "https://6345-186-109-226-170.ngrok-free.app";
 
 async function contarTokens() {
   try {
